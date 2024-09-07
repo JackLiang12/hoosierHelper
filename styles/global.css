@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "CustomFont";
+  src: url("/LemonBird-Regular.woff") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  max-width: 100%;
+}
+
+:root {
+  --text-color: white;
+  --background-color: rgb(188, 236, 255);
+  /* --background-color: rgb(0, 183, 255); */
+  --primary-color: rgb(2, 124, 2);
+  --secondary-color: rgb(154, 255, 214);
+  --accent-color: rgb(226, 0, 0);
+  overflow-x: hidden;
+  /* background-color: var(--background-color); */
+}
+
+.Navbar {
+  display: flex;
+  width: 100vw;
+  height: 75px;
+  background-color: var(--background-color);
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0px 1px black;
+  z-index: 9999;
+}
+.logo {
+  height: 60px;
+  margin-left: 50px;
+}
+.NavItem {
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: solid transparent 2px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  cursor: pointer;
+}
+.NavItem:hover {
+  border-color: black;
+}
+.itemGroup {
+  margin-right: 5%;
+  display: flex;
+  gap: 40px;
+}
+.flipWords {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  width: 100vw;
+  text-align: center;
+  height: 20vh;
+  font-weight: bold;
+}
+.flipFont {
+  font-family: "Shadows Into Light", cursive;
+  color: var(--primary-color);
+}
+
+.mainPageImage {
+  height: 80vh;
+  width: 100vw;
+  object-fit: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.page1 {
+  background-color: gray;
+  width: 100vw;
+}
+.HeroImage {
+  border: black solid 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 50vh;
+  width: 50vw;
+  object-fit: cover;
+  min-width: 20rem;
+  min-height: 20rem;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.HeroTitle {
+  margin: 10px;
+}
+.MissionContainer {
+  width: 100vw;
+  background-color: #a9ffa9;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25%;
+}
+.MissionItem {
+  display: flex;
+  align-items: center;
+  font-size: 6rem;
+  line-height: 1;
+  /*margin-top: 50vh;
+    margin-bottom: 50vh;
+    */
+  height: 100vh;
+  flex-direction: column;
+  top: 25%;
+  background-color: var(--background-color);
+  width: 100vw;
+}
+.BannerCard {
+  display: flex;
+  align-items: center;
+  font-size: 6rem;
+  line-height: 1;
+  /*margin-top: 50vh;
+    margin-bottom: 50vh;
+    */
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+.MissionItemDescription {
+  font-size: 3rem;
+  line-height: 1;
+  margin-top: 3rem;
+  padding: 50px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+
+  backdrop-filter: blur(10px);
+}
+.Endcard {
+  background-color: var(--background-color);
+  width: 100vw;
+  display: flex;
+  height: 40vh;
+}
+.EndContainer {
+  width: 50vw;
+  margin: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.EndItem {
+  flex-grow: 1;
+}
+.EndImage {
+  object-fit: cover;
+  height: 100vh;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.Banner {
+  width: 100vw;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  object-fit: contain;
+  display: flex;
+}
+i {
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.FoodSafetyTitle {
+  justify-content: center;
+  display: flex;
+  font-size: 4rem;
+  line-height: 1;
+}
+.FoodSafetyBody {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  font-size: 2rem;
+}
+.WordsAnimation {
+  animation: spin_words 6s infinite;
+  -webkit-animation: spin_words 8s infinite;
+}
+@keyframes spin_words {
+  25%{
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
+  50%{
+    transform: translateY(-200%);
+    -webkit-transform: translateY(-200%);
+    -moz-transform: translateY(-200%);
+    -ms-transform: translateY(-200%);
+    -o-transform: translateY(-200%);
+}
+  75%{
+    transform: translateY(-300%);
+    -webkit-transform: translateY(-300%);
+    -moz-transform: translateY(-300%);
+    -ms-transform: translateY(-300%);
+    -o-transform: translateY(-300%);
+}
+  100%{
+    transform: translateY(-400%);
+    -webkit-transform: translateY(-400%);
+    -moz-transform: translateY(-400%);
+    -ms-transform: translateY(-400%);
+    -o-transform: translateY(-400%);
+}
+}

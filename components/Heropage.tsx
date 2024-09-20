@@ -37,11 +37,11 @@ const Heropage = () => {
         <p>Hoosier Helper</p>
         <div className="wrapper text-5xl flex h-[3rem] overflow-hidden font-kanit">
           <div className="WordsAnimation mr-[10px] text-green-800">
-            <span className="block">Helping,</span>
-            <span className="block">Saving,</span>
-            <span className="block">and</span>
+            <span className="block">Helping</span>
+            <span className="block">Saving</span>
+            {/* <span className="block"></span> */}
             <span className="block">Feeding</span>
-            <span className="block">Helping,</span>
+            <span className="block">Helping</span>
           </div>
           <p>Families</p>
         </div>
